@@ -8,14 +8,32 @@ long long findFactorial(int number) {
     return number * findFactorial(number - 1);
 }
 
+// Method for sum 
+int getSum(int num){
+   if(num == 0)  
+     return 0;
+
+   return (num + getSum(num-1));
+}
+
+// Method for Fibonacci series 
+int fibonacciRecursive(int n) {
+    if (n <= 1) {
+        return n;
+    }
+    return fibonacciRecursive(n - 1) + fibonacciRecursive(n - 2);
+}
+
 int main() {
-    cout << "6! = " << findFactorial(6) << endl;
     
- 
-    
-    cout << "50! = " << findFactorial(50) << endl;
-    cout << "52! = " << findFactorial(52) << endl;
-    cout << "572! = " << findFactorial(572) << endl;
+    int n = 5;
+    cout << "Fibonacci for " << n << ":" << endl;
+    for (int i = 0; i < n; i++) {
+        cout << fibonacciRecursive(i) << " ";
+    }
+    cout << endl;
+
+    cout << "Sum of numbers from 0 to "<< n <<": " << getSum(4) << endl;
 
     return 0;
 }
