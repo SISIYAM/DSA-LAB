@@ -16,12 +16,12 @@ int getSum(int num){
    return (num + getSum(num-1));
 }
 
-// Method for Fibonacci series 
-int fibonacciRecursive(int n) {
+
+int fibonacci(int n) {
     if (n <= 1) {
         return n;
     }
-    return fibonacciRecursive(n - 1) + fibonacciRecursive(n - 2);
+    return fibonacci(n - 1) + fibonacci(n - 2);
 }
 
 int main() {
@@ -29,7 +29,7 @@ int main() {
     int n = 5;
     cout << "Fibonacci for " << n << ":" << endl;
     for (int i = 0; i < n; i++) {
-        cout << fibonacciRecursive(i) << " ";
+        cout << fibonacci(i) << " ";
     }
     cout << endl;
 
