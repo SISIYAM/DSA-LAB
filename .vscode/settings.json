@@ -1,9 +1,10 @@
 {
-    "files.associations": {
-        "iostream": "cpp",
-        "ostream": "cpp",
-        "array": "cpp",
-        "initializer_list": "cpp",
-        "utility": "cpp"
-    }
+  "files.associations": {
+    "iostream": "cpp",
+    "ostream": "cpp",
+    "array": "cpp",
+    "initializer_list": "cpp",
+    "utility": "cpp",
+    "stdio.h": "c"
+  }
 }
