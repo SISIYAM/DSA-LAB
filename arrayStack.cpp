@@ -59,7 +59,7 @@ int main() {
     cout << "Stack after pushes: ";
     displayStack();
     
-    cout << "Popped value: " << pop() << pop() << endl;
+    cout << "Popped value: " << pop() << " " << pop() << pop() << endl;
     cout << "Stack after pop: ";
     displayStack();
     

@@ -17,6 +17,7 @@ int main() {
     }
 
     for (int i = 0; i < length2; i++) {
+      
         mergedArr[index] = array2[i];
         index++;
     }
