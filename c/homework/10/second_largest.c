@@ -1,17 +1,9 @@
 #include <stdio.h>
 
 int main() {
-    int n, largest, secondLargest;
+    int n=5, largest, secondLargest;
 
-    printf("Enter the number of elements: ");
-    scanf("%d", &n);
-
-    int arr[n];
-
-    printf("Enter %d integers:\n", n);
-    for (int i = 0; i < n; i++) {
-        scanf("%d", &arr[i]);
-    }
+    int arr[5] = {1,2,3,4,5};
 
     largest = secondLargest = arr[0];
 
@@ -24,6 +16,7 @@ int main() {
         }
     }
 
+    printf("First largest element: %d\n", largest);
     printf("Second largest element: %d\n", secondLargest);
     return 0;
 }
