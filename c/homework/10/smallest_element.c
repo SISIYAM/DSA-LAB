@@ -1,21 +1,13 @@
 #include <stdio.h>
 
 int main() {
-    int n, smallest;
+    int smallest;
 
-    printf("Enter the number of elements: ");
-    scanf("%d", &n);
-
-    int arr[n];
-
-    printf("Enter %d integers:\n", n);
-    for (int i = 0; i < n; i++) {
-        scanf("%d", &arr[i]);
-    }
+    int arr[5] = {1,2,3,4,5};
 
     smallest = arr[0]; 
 
-    for (int i = 1; i < n; i++) {
+    for (int i = 1; i < 5; i++) {
         if (arr[i] < smallest) {
             smallest = arr[i];
         }
