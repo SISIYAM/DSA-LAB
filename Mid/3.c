@@ -1,3 +1,5 @@
+// TernarySearch
+
 #include <stdio.h>
 
 int ternarySearch(int arr[], int left, int right, int target) {

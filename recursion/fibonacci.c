@@ -1,3 +1,5 @@
+// fibonacci series
+
 #include <stdio.h>
 
 int fibonacci(int n) {
@@ -7,8 +9,20 @@ int fibonacci(int n) {
     return fibonacci(n - 1) + fibonacci(n - 2);
 }
 
+void printFibonacciSeries(int n) {
+    printf("Fibonacci series up to %d terms: ", n);
+    for (int i = 0; i < n; i++) {
+        printf("%d ", fibonacci(i));
+    }
+    printf("\n");
+}
+
 int main() {
-    int n = 6; // Change to any desired position in the Fibonacci sequence
-    printf("Fibonacci number at position %d is: %d\n", n, fibonacci(n));
+    int n;
+    printf("Enter the number of terms: ");
+    scanf("%d", &n);
+
+    printFibonacciSeries(n);
+
     return 0;
 }

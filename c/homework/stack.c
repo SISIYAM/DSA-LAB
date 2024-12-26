@@ -1,3 +1,5 @@
+// stack C
+
 #include <stdio.h>
 
 int stack[2];

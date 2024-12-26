@@ -1,3 +1,5 @@
+// Series sum
+
 #include <stdio.h>
 
 double seriesSum(int n, int k) {
